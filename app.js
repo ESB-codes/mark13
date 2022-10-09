@@ -245,6 +245,12 @@ let outputEl=document.querySelector("#output");
 function palindrome(){
     let string=inputEl.value;
 // need to convert string into valid format
+
+if (inputEl.value!==checkDifferenctFormats){
+    outputEl.innerText=`Please enter a valid date`
+
+
+}
     
 if (string!==""){
     let list=string.split("-")
